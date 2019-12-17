@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',['as'=>'home.index', function () {
+
+}]);
+
+Route::get('/about',['as'=>'about.index', function () {
+}]);
+
+Route::get('/news',['as'=>'news.index', function () {
+}]);
